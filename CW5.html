@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฟอร์มสมัครเรียนต่อระดับปริญญาตรี พร้อมประวัติการศึกษา</title>
+</head>
+<body>
+    นายปัณณทัต ทองคำชุม สาขา INE ปี 1 CW5-6806022610062 
+    <form>
+        <h1>ข้อมูลส่วนตัวของผู้สมัคร</h1>
+        <strong>Title prefixes</strong>: <br><br>
+                <input type="radio" name="title"> Mr. <br>
+                <input type="radio" name="title"> Miss <br>
+                <input type="radio" name="title"> Mrs. <br><br>
+        <strong>Name </strong>: <input type="text"> <br><br>
+        <strong>Surname </strong>:<input type="text"> <br><br>
+        <strong>id card </strong>: <input type="text" maxlength="13"> <br><br> 
+        <strong>BirthDate </strong>: <input type="date"> <br><br>
+        <strong>Age </strong>: <input type="number"> <br><br>
+        <strong>Gender </strong>: <br><br>
+                <input type="radio" name="Male">Male
+                <input type="radio" name="Female">Female
+                <input type="radio" name="Nonbinary">NonBinary<br><br>
+        <strong>Nationality </strong>: <input type="text"> <br><br>
+        <strong>Race </strong>: <input type="text"> <br><br>
+        <strong>Religion </strong>: <input type="text"> <br><br>
+        <strong>Phone </strong>: <input type="tel"> <br><br>
+        <strong>Email </strong> : <input type="email"> <br><br>
+        <strong>Address </strong>: <textarea></textarea> <br><br>
+        <h1>ข้อมูลการสมัครเรียน</h1>
+        <strong>Qualification : </strong><br><br>
+                <input type="radio" > ม.6<br>
+                <input type="radio" > ปวช.<br>
+                <input type="radio" > ปวส.<br><br>
+         <strong>Graduated from :</strong> <input type="text"> <br><br>
+         <strong>Class of :</strong> <input type="number"> <br><br>
+         <strong>GPA : </strong> <input type="number" step="0.01"> <br><br>
+         <strong>Major : </strong>
+                <select>
+                    <option>IT</option>
+                    <option>ITI</option>
+                    <option>INE</option>
+                    <option>INET</option><br><br>
+                </select> <br>
+        <strong>Reason for choosing this major : </strong><textarea></textarea> <br><br>
+        <h1>ประวัติการศึกษา</h1>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                <th>ระดับการศึกษา</th>
+                <th>สถานศึกษา</th>
+                <th>จังหวัด</th>
+                <th>ปีที่เข้า</th>
+                <th>ปีที่จบ</th>
+                <th>วุฒิที่ได้รับ</th>
+                <th>GPA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>ประถมศึกษา</td>
+                <td><input type="text" name="primary_school"></td>
+                <td><input type="text" name="primary_province"></td>
+                <td><input type="text" name="primary_start_year"></td>
+                <td><input type="text" name="primary_end_year"></td>
+                <td><input type="text" name="primary_cert"></td>
+                <td><input type="text" name="primary_gpa"></td>
+                </tr>
+                <tr>
+                <td>มัธยมต้น</td>
+                <td><input type="text" name="junior_school"></td>
+                <td><input type="text" name="junior_province"></td>
+                <td><input type="text" name="junior_start_year"></td>
+                <td><input type="text" name="junior_end_year"></td>
+                <td><input type="text" name="junior_cert"></td>
+                <td><input type="text" name="junior_gpa"></td>
+                </tr>
+                <tr>
+                <td>มัธยมปลาย/ปวช./ปวส.</td>
+                <td><input type="text" name="senior_school"></td>
+                <td><input type="text" name="senior_province"></td>
+                <td><input type="text" name="senior_start_year"></td>
+                <td><input type="text" name="senior_end_year"></td>
+                <td><input type="text" name="senior_cert"></td>
+                <td><input type="text" name="senior_gpa"></td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>เอกสารแนบ</h1>
+        <h4>**ไฟล์เอกสารแนบ : แนบไฟล์สำเนาบัตรประชาชน แนบไฟล์วุฒิการศึกษา **</h2><br><br>
+        <strong>File : </strong><input type="file"> <br><br>
+        <h3>ยอมรับเงื่อนไขและข้อตกลง</h3>
+        <label>
+            <input type="checkbox" name="accept" required>ฉันยอมรับ</a>
+        </label><br><br>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
